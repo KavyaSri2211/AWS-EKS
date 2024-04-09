@@ -1,1 +1,6 @@
-Hello
+name: Deploy to ECR
+
+on:
+ 
+  push:
+    branches: [ main ]
