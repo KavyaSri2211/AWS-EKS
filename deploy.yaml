@@ -9,8 +9,14 @@ env:
   ECR_REPOSITORY: sampletest
   EKS_CLUSTER_NAME: Kubernetes-demo 
   AWS_REGION: us-west-2
-  steps:
+ 
+jobs:
+  
+  build:
+    name: Deployment
+    runs-on: ubuntu-latest
 
+  steps:
     - name: Set short git commit SHA
       id: commit
       uses: prompt/actions-commit-hash@v2
